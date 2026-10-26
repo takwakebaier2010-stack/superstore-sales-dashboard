@@ -1,168 +1,119 @@
-\# 📊 Dashboard d'analyse des ventes — Superstore
+# 📊 Dashboard d'analyse des ventes — Superstore
 
+Dashboard interactif d'analyse des ventes d'un magasin américain sur la période 2014–2017, développé avec **Python, pandas, Plotly et Streamlit**.
 
+🔗 **Démo en ligne :** [Accéder au dashboard](https://superstore-sales-dashboard-t.streamlit.app/))
 
-Dashboard interactif d'analyse des ventes d'un magasin américain (2014–2017), construit avec \*\*Python, pandas, Plotly et Streamlit\*\*.
+![Aperçu du dashboard](docs/screenshot.png)
 
+## 🎯 Objectif
 
+Transformer un jeu de données de ventes brut en un tableau de bord interactif permettant de répondre rapidement à des questions business :
 
-🔗 \*\*Démo en ligne :\*\* \_lien à ajouter après le déploiement\_
+- Quels sont les ventes, le profit et la marge globale ?
+- Comment les ventes évoluent-elles dans le temps ?
+- Quelles catégories, régions et quels produits génèrent le plus de profit ou des pertes ?
+- Quels sont les clients et segments les plus performants ?
 
+## ✨ Fonctionnalités
 
+- **4 indicateurs clés (KPI)** : ventes totales, profit total, nombre de commandes et marge.
+- **Filtres interactifs** : année, région et catégorie.
+- Évolution mensuelle des ventes et du profit.
+- Analyse par catégorie, sous-catégorie, région et segment de clientèle.
+- Top 10 des produits et top 10 des clients.
+- Tableau de données avec export CSV des données filtrées.
 
-!\[Aperçu du dashboard](docs/screenshot.png)
+## 📁 Données
 
+- **Source :** [Superstore Dataset — Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+- **Volume :** 9 994 lignes et 21 colonnes.
+- **Période :** janvier 2014 à décembre 2017.
+- **Préparation :** conversion des dates au format mois/jour/année, vérification des valeurs manquantes et des doublons.
 
-
-\## 🎯 Objectif
-
-
-
-Transformer un jeu de données de ventes brut en un tableau de bord clair, qui répond rapidement à des questions business :
-
-
-
-\- Quels sont les ventes, le profit et la marge globale ?
-
-\- Comment les ventes évoluent-elles dans le temps ?
-
-\- Quelles catégories, régions et produits rapportent le plus (ou font perdre de l'argent) ?
-
-\- Quels sont les meilleurs clients et segments ?
-
-
-
-\## ✨ Fonctionnalités
-
-
-
-\- 4 indicateurs clés (KPI) : ventes totales, profit total, nombre de commandes, marge
-
-\- Filtres interactifs : année, région, catégorie
-
-\- Évolution mensuelle des ventes et du profit
-
-\- Analyse par catégorie, sous-catégorie, région et segment de clients
-
-\- Top 10 produits et top 10 clients
-
-\- Tableau de données et export CSV des données filtrées
-
-
-
-\## 📁 Données
-
-
-
-\- Source : \[Superstore Dataset (Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
-
-\- 9 994 lignes et 21 colonnes, commandes de janvier 2014 à décembre 2017
-
-\- Préparation : conversion des dates (format mois/jour/année), vérification des valeurs manquantes (aucune) et des doublons (aucun)
-
-
-
-\## 🔎 Chiffres clés
-
-
+## 🔎 Chiffres clés
 
 | Indicateur | Valeur |
-
-|---|---|
-
+|---|---:|
 | Ventes totales | 2 297 201 $ |
-
 | Profit total | 286 397 $ |
-
 | Commandes | 5 009 |
+| Marge globale | 12,5 % |
 
-| Marge | 12,5 % |
+### Principaux enseignements
 
+- Les ventes annuelles passent de **484 k$ en 2014** à **733 k$ en 2017**.
+- La catégorie **Technology** génère le profit le plus élevé, avec environ **145 k$**.
+- La catégorie **Furniture** génère environ **18 k$ de profit pour 742 k$ de ventes**, soit une marge d'environ **2,5 %**.
 
+## 🛠️ Technologies utilisées
 
-\- Les ventes annuelles passent de 484 k$ (2014) à 733 k$ (2017).
+- **Python** — langage de programmation.
+- **pandas** — nettoyage et analyse des données.
+- **Plotly** — visualisations interactives.
+- **Streamlit** — création de l'interface web du dashboard.
 
-\- La catégorie Technology génère le plus de profit (145 k$). Furniture rapporte seulement 18 k$ de profit pour 742 k$ de ventes, soit environ 2,5 % de marge.
+## ▶️ Installation et lancement en local
 
-
-
-\## 🛠️ Technologies
-
-
-
-\- Python
-
-\- pandas (nettoyage et analyse)
-
-\- Plotly (graphiques interactifs)
-
-\- Streamlit (interface web du dashboard)
-
-
-
-\## ▶️ Lancer le projet en local
-
-
+### 1. Cloner le dépôt
 
 ```bash
-
-git clone https://github.com/TON-PSEUDO/superstore-sales-dashboard.git
-
+git clone https://github.com/takwakebaier2010-stack/superstore-sales-dashboard.git
 cd superstore-sales-dashboard
+```
 
+### 2. Créer un environnement virtuel
+
+```bash
 python -m venv venv
+```
 
-venv\\Scripts\\activate
+### 3. Activer l'environnement virtuel
 
+Sous Windows :
+
+```bash
+venv\Scripts\activate
+```
+
+Sous macOS ou Linux :
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Installer les dépendances
+
+```bash
 pip install -r requirements.txt
+```
 
+### 5. Lancer le dashboard
+
+```bash
 streamlit run app.py
-
 ```
 
+L'application sera accessible à l'adresse locale indiquée dans le terminal.
 
+## 🗂️ Structure du projet
 
-Sur Mac ou Linux, remplace `venv\\Scripts\\activate` par `source venv/bin/activate`.
-
-
-
-\## 🗂️ Structure du projet
-
-
-
-```
-
+```text
 superstore-sales-dashboard/
-
-├── app.py               # le dashboard Streamlit
-
-├── explore.py           # exploration et calcul des KPI
-
-├── requirements.txt     # bibliothèques nécessaires
-
+├── app.py                 # Application Streamlit
+├── explore.py             # Exploration et calcul des KPI
+├── requirements.txt       # Dépendances Python
 ├── data/
-
-│   └── superstore.csv   # jeu de données
-
+│   └── superstore.csv     # Jeu de données
 ├── docs/
-
-│   └── screenshot.png   # capture d'écran
-
+│   └── screenshot.png     # Capture d'écran du dashboard
 └── .streamlit/
-
-&#x20;   └── config.toml      # thème (blanc et vert)
-
+    └── config.toml        # Configuration du thème
 ```
 
+## 👩‍💻 Auteure
 
+**Takwa Kebaier**  
+Étudiante en Licence Business Information Systems — ISG Tunis.
 
-\## 👩‍💻 Auteure
-
-
-
-\*\*Takwa Kebaier\*\* — étudiante en 3e année de Licence Business Information Systems, ISG Tunis.
-
-
-
-\[LinkedIn](https://www.linkedin.com/in/takwa-kebaier)
-
+🔗 [Mon profil LinkedIn](https://www.linkedin.com/in/takwa-kebaier)
