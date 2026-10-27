@@ -1,4 +1,4 @@
-# 📊 Dashboard d'analyse des ventes — Superstore
+#  Dashboard d'analyse des ventes — Superstore
 
 Dashboard interactif d'analyse des ventes d'un magasin américain sur la période 2014–2017, développé avec **Python, pandas, Plotly et Streamlit**.
 
@@ -6,7 +6,7 @@ Dashboard interactif d'analyse des ventes d'un magasin américain sur la périod
 
 ![Aperçu du dashboard](docs/screenshot.png)
 
-## 🎯 Objectif
+##  Objectif
 
 Transformer un jeu de données de ventes brut en un tableau de bord interactif permettant de répondre rapidement à des questions business :
 
@@ -15,7 +15,7 @@ Transformer un jeu de données de ventes brut en un tableau de bord interactif p
 - Quelles catégories, régions et quels produits génèrent le plus de profit ou des pertes ?
 - Quels sont les clients et segments les plus performants ?
 
-## ✨ Fonctionnalités
+##  Fonctionnalités
 
 - **4 indicateurs clés (KPI)** : ventes totales, profit total, nombre de commandes et marge.
 - **Filtres interactifs** : année, région et catégorie.
@@ -24,14 +24,14 @@ Transformer un jeu de données de ventes brut en un tableau de bord interactif p
 - Top 10 des produits et top 10 des clients.
 - Tableau de données avec export CSV des données filtrées.
 
-## 📁 Données
+##  Données
 
 - **Source :** [Superstore Dataset — Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 - **Volume :** 9 994 lignes et 21 colonnes.
 - **Période :** janvier 2014 à décembre 2017.
 - **Préparation :** conversion des dates au format mois/jour/année, vérification des valeurs manquantes et des doublons.
 
-## 🔎 Chiffres clés
+##  Chiffres clés
 
 | Indicateur | Valeur |
 |---|---:|
@@ -46,14 +46,14 @@ Transformer un jeu de données de ventes brut en un tableau de bord interactif p
 - La catégorie **Technology** génère le profit le plus élevé, avec environ **145 k$**.
 - La catégorie **Furniture** génère environ **18 k$ de profit pour 742 k$ de ventes**, soit une marge d'environ **2,5 %**.
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 
 - **Python** — langage de programmation.
 - **pandas** — nettoyage et analyse des données.
 - **Plotly** — visualisations interactives.
 - **Streamlit** — création de l'interface web du dashboard.
 
-## ▶️ Installation et lancement en local
+##  Installation et lancement en local
 
 ### 1. Cloner le dépôt
 
@@ -96,7 +96,7 @@ streamlit run app.py
 
 L'application sera accessible à l'adresse locale indiquée dans le terminal.
 
-## 🗂️ Structure du projet
+##  Structure du projet
 
 ```text
 superstore-sales-dashboard/
@@ -111,7 +111,7 @@ superstore-sales-dashboard/
     └── config.toml        # Configuration du thème
 ```
 
-## 👩‍💻 Auteure
+##  Auteure
 
 **Takwa Kebaier**  
 Étudiante en Licence Business Information Systems — ISG Tunis.
